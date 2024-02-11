@@ -116,81 +116,111 @@ if (screencount  <= 1)
             {
                 VM.Display.WindowState = WindowState.Normal;
                 VM.Display.WindowStyle = WindowStyle.ToolWindow;
+                VM.Display.Width = 1900;
+                VM.Display.Height = 800;
             }
          
         }
 
         private void btnMinInc_Click(object sender, RoutedEventArgs e)
         {
-            VM.Game.MinInc();
+            if (btnMinInc.IsEnabled == true)
+            {
+                VM.Game.MinInc();
+            }
         }
 
         private void btnMinDec_Click(object sender, RoutedEventArgs e)
         {
-            VM.Game.MinDec();
+            if (btnMinDec.IsEnabled == true)
+            {
+                VM.Game.MinDec();
+            }
         }
 
         private void btnTimerStart_Click(object sender, RoutedEventArgs e)
         {
-            VM.Game.TimerStart();
+            if (btnTimerStart.IsEnabled == true)
+            {
+                VM.Game.TimerStart();
 
-            btnTimerPause.Visibility = Visibility.Visible;
-            btnTimerStart.Visibility = Visibility.Hidden;
-            btnScoreTeam1Dec.IsEnabled = true;
-            btnScoreTeam2Dec.IsEnabled = true;
-            btnScoreTeam1Inc.IsEnabled = true;
-            btnScoreTeam2Inc.IsEnabled = true;
+                btnTimerPause.Visibility = Visibility.Visible;
+                btnTimerStart.Visibility = Visibility.Hidden;
+                btnScoreTeam1Dec.IsEnabled = true;
+                btnScoreTeam2Dec.IsEnabled = true;
+                btnScoreTeam1Inc.IsEnabled = true;
+                btnScoreTeam2Inc.IsEnabled = true;
 
-            btnMinDec.IsEnabled = false;
-            btnMinInc.IsEnabled = false;
+                btnTimerPause.IsEnabled = true;
+                btnMinDec.IsEnabled = false;
+                btnMinInc.IsEnabled = false;
+            }
         }
 
         private void btnTimerReset_Click(object sender, RoutedEventArgs e)
         {
-            VM.Game.TimerReset();
+            if (btnTimerReset.IsEnabled == true)
+            {
+                VM.Game.TimerReset();
 
-            btnScoreTeam1Dec.IsEnabled = false;
-            btnScoreTeam2Dec.IsEnabled = false;
-            btnScoreTeam1Inc.IsEnabled = false;
-            btnScoreTeam2Inc.IsEnabled = false;
+                btnScoreTeam1Dec.IsEnabled = false;
+                btnScoreTeam2Dec.IsEnabled = false;
+                btnScoreTeam1Inc.IsEnabled = false;
+                btnScoreTeam2Inc.IsEnabled = false;
 
-            btnMinDec.IsEnabled = true;
-            btnMinInc.IsEnabled = true;
+                btnMinDec.IsEnabled = true;
+                btnMinInc.IsEnabled = true;
 
-            
-            btnTimerPause.Visibility = Visibility.Hidden;
-            btnTimerStart.Visibility = Visibility.Visible;
+                btnTimerPause.IsEnabled = false;
+                btnTimerPause.Visibility = Visibility.Hidden;
+                btnTimerStart.Visibility = Visibility.Visible;
+            }
         }
 
         private void btnTimerPause_Click(object sender, RoutedEventArgs e)
         {
-            VM.Game.TimerPause();
+            if (btnTimerPause.IsEnabled == true)
+            {
+                VM.Game.TimerPause();
 
-            btnTimerPause.Visibility = Visibility.Hidden;
-            btnTimerStart.Visibility = Visibility.Visible;
+                btnTimerPause.Visibility = Visibility.Hidden;
+                btnTimerStart.Visibility = Visibility.Visible;
 
-            btnMinDec.IsEnabled = false;
-            btnMinInc.IsEnabled = false;
+                btnMinDec.IsEnabled = false;
+                btnMinInc.IsEnabled = false;
+            }
         }
 
         private void btnScoreTeam1Inc_Click(object sender, RoutedEventArgs e)
         {
-            VM.Game.ScoreTeam1Inc();
+            if (btnScoreTeam1Inc.IsEnabled == true)
+            {
+                VM.Game.ScoreTeam1Inc();
+            }
         }
 
         private void btnScoreTeam1Dec_Click(object sender, RoutedEventArgs e)
         {
-            VM.Game.ScoreTeam1Dec();
+            if (btnScoreTeam1Dec.IsEnabled == true)
+            {
+                VM.Game.ScoreTeam1Dec();
+            }
         }
 
         private void btnScoreTeam2Inc_Click(object sender, RoutedEventArgs e)
         {
-            VM.Game.ScoreTeam2Inc();
+            if (btnScoreTeam2Inc.IsEnabled == true)
+            {
+                VM.Game.ScoreTeam2Inc();
+            }
         }
 
         private void btnScoreTeam2Dec_Click(object sender, RoutedEventArgs e)
         {
-            VM.Game.ScoreTeam2Dec();
+            if (btnScoreTeam2Dec.IsEnabled == true)
+            {
+                VM.Game.ScoreTeam2Dec();
+            }
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)

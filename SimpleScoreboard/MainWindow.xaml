@@ -6,6 +6,58 @@
         xmlns:local="clr-namespace:SimpleScoreboard"
         mc:Ignorable="d"
         Title="Control" Background="DarkGray" WindowStyle="ToolWindow" FontStretch="ExtraExpanded" Width="1200" Height="300" MinWidth="1200" MinHeight="300" Closing="Window_Closing" >
+
+    <Window.Resources>
+        <RoutedUICommand x:Key="ScoreTeam1Inc"/>
+        <RoutedUICommand x:Key="ScoreTeam1Dec"/>
+
+        <RoutedUICommand x:Key="MinInc"/>
+        <RoutedUICommand x:Key="MinDec"/>
+        <RoutedUICommand x:Key="Start"/>
+        <RoutedUICommand x:Key="Pause"/>
+        <RoutedUICommand x:Key="Reset"/>
+
+        <RoutedUICommand x:Key="ScoreTeam2Inc"/>
+        <RoutedUICommand x:Key="ScoreTeam2Dec"/>
+    </Window.Resources>
+
+    <Window.CommandBindings>
+        <CommandBinding Command="{StaticResource ScoreTeam1Inc}" 
+                    Executed="btnScoreTeam1Inc_Click" />
+        <CommandBinding Command="{StaticResource ScoreTeam1Dec}" 
+                    Executed="btnScoreTeam1Dec_Click" />
+
+        <CommandBinding Command="{StaticResource MinInc}" 
+                    Executed="btnMinInc_Click" />
+        <CommandBinding Command="{StaticResource MinDec}" 
+                    Executed="btnMinDec_Click" />
+        <CommandBinding Command="{StaticResource Start}" 
+                    Executed="btnTimerStart_Click" />
+        <CommandBinding Command="{StaticResource Pause}" 
+                    Executed="btnTimerPause_Click" />
+        <CommandBinding Command="{StaticResource Reset}" 
+                    Executed="btnTimerReset_Click" />
+
+        <CommandBinding Command="{StaticResource ScoreTeam2Inc}" 
+                    Executed="btnScoreTeam2Inc_Click" />
+        <CommandBinding Command="{StaticResource ScoreTeam2Dec}" 
+                    Executed="btnScoreTeam2Dec_Click" />
+    </Window.CommandBindings>
+
+    <Window.InputBindings>
+        <KeyBinding Key="A" Command="{StaticResource ScoreTeam1Inc}" />
+        <KeyBinding Key="S" Command="{StaticResource ScoreTeam1Dec}" />
+
+        <KeyBinding Key="R" Command="{StaticResource MinInc}" />
+        <KeyBinding Key="T" Command="{StaticResource MinDec}" />
+        <KeyBinding Key="Z" Command="{StaticResource Start}" />
+        <KeyBinding Key="U" Command="{StaticResource Pause}" />
+        <KeyBinding Key="I" Command="{StaticResource Reset}" />
+
+        <KeyBinding Key="K" Command="{StaticResource ScoreTeam2Inc}" />
+        <KeyBinding Key="L" Command="{StaticResource ScoreTeam2Dec}" />
+    </Window.InputBindings>
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition x:Name="MwColumn0" Width="10*"/>

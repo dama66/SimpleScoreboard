@@ -1,14 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "6mT+AV5enr67/9fk48p30GAQco9sOyEeHmiO7sANV3AN8ZO4ABcg6+8K0MhREt/ghXob3RSdc5LozPoip5l9FQ==",
+  "dgSpecHash": "D9aPztc3EV/Mwmffpl0YMO0ok9JQASSCBBS4RkZEeWBaFZ68nC7AZa4hOUDADmKXwm7vKW0n1Vg5PkobuH46kg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\David\\source\\repos\\Simple_Scoreboard\\SimpleScoreboard\\SimpleScoreboard.csproj",
+  "projectFilePath": "C:\\Users\\David\\source\\repos\\SimpleScoreboard\\SimpleScoreboard\\SimpleScoreboard.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\David\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.0\\microsoft.net.illink.tasks.8.0.0.nupkg.sha512",
-    "C:\\Users\\David\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\8.0.0\\microsoft.netcore.app.runtime.win-x86.8.0.0.nupkg.sha512",
-    "C:\\Users\\David\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\8.0.0\\microsoft.windowsdesktop.app.runtime.win-x86.8.0.0.nupkg.sha512",
-    "C:\\Users\\David\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\8.0.0\\microsoft.aspnetcore.app.runtime.win-x86.8.0.0.nupkg.sha512",
-    "C:\\Users\\David\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\8.0.0\\microsoft.netcore.app.crossgen2.win-x64.8.0.0.nupkg.sha512"
+    "C:\\Users\\David\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.1\\microsoft.net.illink.tasks.8.0.1.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\wpfscreenhelper\\2.1.0\\wpfscreenhelper.2.1.0.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\8.0.1\\microsoft.netcore.app.runtime.win-x86.8.0.1.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\8.0.1\\microsoft.windowsdesktop.app.runtime.win-x86.8.0.1.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\8.0.1\\microsoft.aspnetcore.app.runtime.win-x86.8.0.1.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\8.0.1\\microsoft.netcore.app.crossgen2.win-x64.8.0.1.nupkg.sha512"
   ],
   "logs": []
 }

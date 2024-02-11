@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SimpleScoreboard/1.0.0": {
+        "dependencies": {
+          "WpfScreenHelper": "2.1.0"
+        },
+        "runtime": {
+          "SimpleScoreboard.dll": {}
+        }
+      },
+      "WpfScreenHelper/2.1.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/WpfScreenHelper.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SimpleScoreboard/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WpfScreenHelper/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZzS/lkme7QcYIvQgsVw9D1OuI/fSrNnoDXXDCrFmacYVvdGXOQlGEeQBbKdBP9r4k+3CsUQMZq59RU99I9Mjhw==",
+      "path": "wpfscreenhelper/2.1.0",
+      "hashPath": "wpfscreenhelper.2.1.0.nupkg.sha512"
+    }
+  }
+}

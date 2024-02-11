@@ -1,0 +1,7 @@
+H:\SimpleScoreboard.pdb
+H:\D3DCompiler_47_cor3.dll
+H:\PenImc_cor3.dll
+H:\PresentationNative_cor3.dll
+H:\vcruntime140_cor3.dll
+H:\wpfgfx_cor3.dll
+H:\SimpleScoreboard.exe
