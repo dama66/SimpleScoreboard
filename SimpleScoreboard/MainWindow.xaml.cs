@@ -1,15 +1,6 @@
-﻿using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 using System.Windows.Threading;
+using WpfScreenHelper;
 
 namespace SimpleScoreboard
 {
@@ -40,10 +31,15 @@ namespace SimpleScoreboard
 
             VM.Display.Show();
 
+            
+
         }
 
         private void DispatcherTimerTick(object sender, EventArgs e)
         {
+            var screens = Screen.AllScreens;
+            var screencount = 0;
+
             if (VM.Game.ScoreTeam1 < 9)
             {
                 MwScore10Team1.Content = "0";
@@ -92,15 +88,15 @@ namespace SimpleScoreboard
             VM.Display.Second1.Content = MwSecond1.Content;
             VM.Display.Second2.Content = MwSecond2.Content; 
 
-            VM.Display.Score10Team1.FontSize = VM.Display.Column0.ActualWidth - 10;
-            VM.Display.Score1Team1.FontSize = VM.Display.Column0.ActualWidth - 10;
-            VM.Display.Score10Team2.FontSize = VM.Display.Column0.ActualWidth - 10;
-            VM.Display.Score1Team2.FontSize = VM.Display.Column0.ActualWidth - 10;
-            VM.Display.Minute1.FontSize = VM.Display.Column0.ActualWidth - 10;
-            VM.Display.Minute2.FontSize = VM.Display.Column0.ActualWidth - 10;
-            VM.Display.Second1.FontSize = VM.Display.Column0.ActualWidth - 10;
-            VM.Display.Second2.FontSize = VM.Display.Column0.ActualWidth - 10;
-            VM.Display.Colon.FontSize = VM.Display.Column0.ActualWidth - 10;
+            VM.Display.Score10Team1.FontSize = VM.Display.Column0.ActualWidth + 100;
+            VM.Display.Score1Team1.FontSize = VM.Display.Column0.ActualWidth + 100;
+            VM.Display.Score10Team2.FontSize = VM.Display.Column0.ActualWidth + 100;
+            VM.Display.Score1Team2.FontSize = VM.Display.Column0.ActualWidth + 100;
+            VM.Display.Minute1.FontSize = VM.Display.Column0.ActualWidth + 100;
+            VM.Display.Minute2.FontSize = VM.Display.Column0.ActualWidth + 100;
+            VM.Display.Second1.FontSize = VM.Display.Column0.ActualWidth + 100;
+            VM.Display.Second2.FontSize = VM.Display.Column0.ActualWidth + 100;
+            VM.Display.Colon.FontSize = VM.Display.Column0.ActualWidth + 100;
 
             if(VM.Display.WindowState == WindowState.Maximized)
             {
@@ -111,6 +107,17 @@ namespace SimpleScoreboard
             {
                 btnTimerPause.IsEnabled = false;
             }
+
+foreach (Screen screen in screens)
+            {
+                screencount++;
+            }
+if (screencount  <= 1)
+            {
+                VM.Display.WindowState = WindowState.Normal;
+                VM.Display.WindowStyle = WindowStyle.ToolWindow;
+            }
+         
         }
 
         private void btnMinInc_Click(object sender, RoutedEventArgs e)
@@ -149,6 +156,10 @@ namespace SimpleScoreboard
 
             btnMinDec.IsEnabled = true;
             btnMinInc.IsEnabled = true;
+
+            
+            btnTimerPause.Visibility = Visibility.Hidden;
+            btnTimerStart.Visibility = Visibility.Visible;
         }
 
         private void btnTimerPause_Click(object sender, RoutedEventArgs e)
@@ -157,10 +168,6 @@ namespace SimpleScoreboard
 
             btnTimerPause.Visibility = Visibility.Hidden;
             btnTimerStart.Visibility = Visibility.Visible;
-            btnScoreTeam1Dec.IsEnabled = false;
-            btnScoreTeam2Dec.IsEnabled = false;
-            btnScoreTeam1Inc.IsEnabled = false;
-            btnScoreTeam2Inc.IsEnabled = false;
 
             btnMinDec.IsEnabled = false;
             btnMinInc.IsEnabled = false;

@@ -5,40 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SimpleScoreboard"
         mc:Ignorable="d"
-        Title="Display" Background="DarkGray" WindowStyle="ToolWindow" FontStretch="ExtraExpanded" Width="1200" Height="300" MinWidth="1200" MinHeight="300" >
+        Title="Display" Background="DarkGray" WindowStyle="ToolWindow" FontStretch="ExtraExpanded" Width="1900" Height="800" MinWidth="1200" MinHeight="300" >
     <Grid>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
             <ColumnDefinition x:Name="Column0" Width="10*"/>
             <ColumnDefinition Width="10*"/>
-            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="10"/>
             <ColumnDefinition Width="10*"/>
             <ColumnDefinition Width="10*"/>
-            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="4*"/>
             <ColumnDefinition Width="10*"/>
             <ColumnDefinition Width="10*"/>
-            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="10"/>
             <ColumnDefinition Width="10*"/>
             <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="10*"/>
             <RowDefinition Height="60*"/>
-            <RowDefinition Height="30*" MaxHeight="150" />
+            <RowDefinition Height="10*" MaxHeight="10" />
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
 
 
-        <Label Name="Score10Team1" Grid.Row="1" Grid.Column="0" Content="0" FontFamily="Ni7seg" FontSize="120" HorizontalAlignment="Center"  VerticalAlignment="Bottom" Foreground="Red" />
-        <Label Name="Score1Team1" Grid.Row="1" Grid.Column="1" Content="0" FontFamily="Ni7seg" FontSize="120" HorizontalAlignment="Center"  VerticalAlignment="Bottom" Foreground="Red" />
+        <Label Name="Score10Team1" Grid.Row="1" Grid.Column="1" Content="0" FontFamily="Ni7seg" FontSize="120" HorizontalAlignment="Center"  VerticalAlignment="Bottom" Foreground="Red" />
+        <Label Name="Score1Team1" Grid.Row="1" Grid.Column="2" Content="0" FontFamily="Ni7seg" FontSize="120" HorizontalAlignment="Center"  VerticalAlignment="Bottom" Foreground="Red" />
 
-        <Label Name="Minute1" Grid.Row="1" Grid.Column="3" Content="0" FontFamily="Ni7seg" FontSize="120" HorizontalAlignment="Center"  VerticalAlignment="Top" Foreground="Black" />
-        <Label Name="Minute2" Grid.Row="1" Grid.Column="4" Content="0" FontFamily="Ni7seg" FontSize="120" HorizontalAlignment="Center"  VerticalAlignment="Top" Foreground="Black" />
-        <Label Name="Colon" Content=":"  Grid.Row="1" Margin="0, -30, 0, 0" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Column="5" FontSize="100" FontWeight="Bold" />
-        <Label Name="Second1" Grid.Row="1" Grid.Column="6" Content="0" FontFamily="Ni7seg" FontSize="120" HorizontalAlignment="Center"  VerticalAlignment="Top" Foreground="Black" />
-        <Label Name="Second2" Grid.Row="1" Grid.Column="7" Content="0" FontFamily="Ni7seg" FontSize="120" HorizontalAlignment="Center"  VerticalAlignment="Top" Foreground="Black" />
+        <Label Name="Minute1" Grid.Row="1" Grid.Column="4" Content="0" FontFamily="Ni7seg" FontSize="120" HorizontalAlignment="Center"  VerticalAlignment="Top" Foreground="Black" />
+        <Label Name="Minute2" Grid.Row="1" Grid.Column="5" Content="0" FontFamily="Ni7seg" FontSize="120" HorizontalAlignment="Center"  VerticalAlignment="Top" Foreground="Black" />
+        <Label Name="Colon" Content=":"  Grid.Row="1" Margin="0, -30, 0, 0" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Column="6" FontSize="100" FontWeight="Bold" />
+        <Label Name="Second1" Grid.Row="1" Grid.Column="7" Content="0" FontFamily="Ni7seg" FontSize="120" HorizontalAlignment="Center"  VerticalAlignment="Top" Foreground="Black" />
+        <Label Name="Second2" Grid.Row="1" Grid.Column="8" Content="0" FontFamily="Ni7seg" FontSize="120" HorizontalAlignment="Center"  VerticalAlignment="Top" Foreground="Black" />
 
-        <Label Name="Score10Team2" Grid.Row="1" Grid.Column="9" Content="0" FontFamily="Ni7seg" FontSize="120" HorizontalAlignment="Center"  VerticalAlignment="Bottom" Foreground="Blue" />
-        <Label Name="Score1Team2" Grid.Row="1" Grid.Column="10" Content="0" FontFamily="Ni7seg" FontSize="120" HorizontalAlignment="Center"  VerticalAlignment="Bottom" Foreground="Blue" />
-        
+        <Label Name="Score10Team2" Grid.Row="1" Grid.Column="10" Content="0" FontFamily="Ni7seg" FontSize="120" HorizontalAlignment="Center"  VerticalAlignment="Bottom" Foreground="Blue" />
+        <Label Name="Score1Team2" Grid.Row="1" Grid.Column="11" Content="0" FontFamily="Ni7seg" FontSize="120" HorizontalAlignment="Center"  VerticalAlignment="Bottom" Foreground="Blue" />
+
     </Grid>
 </Window>

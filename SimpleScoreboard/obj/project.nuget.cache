@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "PyoAd8WfZkJUKxwDasv5lKffkV4Pi/SkSDfnthzyKidYeF1Qp2nmsnyj0B5F0AFXpG0GJg5hX9E5JfnZs/WlyA==",
+  "dgSpecHash": "AUZ69VNP6rvjL8u4i2pfDRmYHhJ2x5yHPcC6z63P8d4r6BdfTXkez+SEEbyf0C+GJuRip+FENSDm9jCgNxFE6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Downloads\\Simple_Scoreboard-dev\\Simple_Scoreboard-dev\\SimpleScoreboard\\SimpleScoreboard.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\David\\source\\repos\\SimpleScoreboard\\SimpleScoreboard\\SimpleScoreboard.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\David\\.nuget\\packages\\wpfscreenhelper\\2.1.0\\wpfscreenhelper.2.1.0.nupkg.sha512"
+  ],
   "logs": []
 }
